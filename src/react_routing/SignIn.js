@@ -2,16 +2,19 @@ import { useNavigate } from "react-router-dom";
 import InputComponent from "./InputComponet";
 import {useState} from 'react';
 import { Link } from "react-router-dom";
+import './signin.css';
 export default function SignIn(){
     const [email,setEmail] = useState("");
     const [pwd,setPwd] = useState("");
     const [emailerror,setEmailError] = useState("");
     const [pwdError,setpwdError] = useState("");
-
-    const getlocalstore=localStorage.getItem(email,pwd)
+  const[signup,setSignup] = useState(false)
+    const getlocalstore=localStorage.getItem(email)
      const userdata=JSON.parse(getlocalstore)
      console.log("userdata",userdata)
+
     const navigate = useNavigate()
+
    function ValidateEmail(event){
       console.log("event.target",event.target);// it  triggers the inpt field which input is called.
       console.log("event.target.value",event.target.value);// it give that triggered input field value.
@@ -58,31 +61,36 @@ export default function SignIn(){
         }
 
     }
-    function ValidSignIn(){
+    function ValidSignIn(e){
+       e.preventDefault()
        const isValidEmail=validationEmail()
-       const isValidPwd=validatationPwd()
-       if(isValidEmail&&isValidPwd)
-        {
-        alert("SuccessFully SignIn..")
-        navigate('/Dashboard')
-       }
-       else{
-        alert("please Check your credentials")
-       }
-        
-    }
+       console.log("isValidEmail",isValidEmail)
+       const isValidPwd=validatationPwd() 
+
+         if(((isValidEmail&&isValidPwd)&& userdata&&email===userdata.Email)&&(pwd===userdata.password)){
+          alert("SuccessFully SignIn..")
+          navigate('/Dashboard')
+          setSignup(false)
+          }  else{
+          alert('user not found')
+          setSignup(true)
+           }
+        }
+    
     return(
-        <div>
+        <div id="divide">
             <form>
                 <h1>SIGN IN</h1>
                 <InputComponent inputType="email" inputId="email" inputValue={email} inputOnChange={ValidateEmail} inputLable="Email" emailError={emailerror}/>
                 <span id="sp">{emailerror}</span>
                 <InputComponent inputType="password" inputId="password" inputValue={pwd} inputOnChange={validatePassword} inputLable="Password" pwdError={pwdError} />
-                 <span>{pwdError}</span><br></br>
-                <button onClick={ValidSignIn}>SignIn</button>
-                <p>if your not sign up please signup <Link to="/SignUp">SignUp</Link></p>
+                 <span  id="sp">{pwdError}</span><br></br>
+                <button id="signin-button" onClick={ValidSignIn}>SignIn</button><br></br><br></br>
+                {
+                    signup&&<p>user not found please ,<Link to="/SignUp">SignUp</Link></p>
+                 }
             </form>
-          
+
         </div>
     )
 }

@@ -1,0 +1,50 @@
+#formStyle{
+    /* background-image: url("") ; */
+    background-repeat: none;
+    background-position: 0%;
+    box-shadow: 3px 2px 3px 4px rgb(236, 233, 170);
+    width:500px;
+    height:500px;
+    padding: 10px;
+    margin-left: 35%;
+    margin-top: 50px;;
+    border:solid rgb(192, 221, 238) t;
+    border-radius:30px ;
+      /* background: rgba(255, 255, 255, 0.5); white overlay at 50% opacity */
+
+}
+#divi{
+    padding:10px;
+    margin:5px;
+}
+#sp{
+color: red;
+ font-size: 1.0em;
+  margin-left: 1px ;
+  font: bolder;
+}
+#signup{
+    width:100px;
+    height: 40px;
+    border-radius: 30px ;
+    
+    border:  1px solid rgb(73, 182, 190) transparent ;
+    font-size: 1.09em;
+    /* color:black; */
+    font-weight:bold;
+}
+#signup:hover{
+    background-color: black;
+    color: white;
+     font-weight:bold;
+}
+
+label{
+     font-size:18px;
+    color:white;
+     font: bolder;
+}
+#signup-heading h1{
+    color: blue;
+   
+}

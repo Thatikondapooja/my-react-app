@@ -1,6 +1,7 @@
 import {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import InputComponent from "./InputComponet";
+import './signup.css';
 export default function SignUp(){
     const navigate = useNavigate()
     const [fName,setFname] = useState("");
@@ -102,7 +103,8 @@ function validationOfSignUpForm() {
 
   return isValid; // returns true only if all fields are valid
 }
-function handleSubmit(){
+function handleSubmit(e){
+    e.preventDefault()
     if(validationOfSignUpForm()){
          const local={
             firstname:fName,
@@ -126,20 +128,20 @@ function handleSubmit(){
 
 
     return(
-        <div>
+        <div id="formStyle">
             <form onSubmit={handleSubmit}>
                <h1>SignUp</h1>
                <InputComponent inputType="text" inputId="fname" inputValue={fName} inputOnChange={firstName} inputLable="First Name" fnerror={fnerror}/>
-                <span>{fnerror}</span>
+                <span  id="sp">{fnerror}</span>
                 <InputComponent inputType="text" inputId="SName" inputValue={sName} inputOnChange={secondName} inputLable="Second Name" snerror={snerror} />
-                 <span>{snerror}</span>
+                 <span  id="sp">{snerror}</span>
                   <InputComponent inputType="email" inputId="email" inputValue={email} inputOnChange={ValidateEmail} inputLable="Email" emailError={emailerror}/>
-                <span>{emailerror}</span>
+                <span  id="sp">{emailerror}</span>
                 {/* <InputComponent inputType="password" inputId="confirmPassword" inputValue={confirmPassword} inputOnChange={validateConfirmPassword} inputLable="Confirm Password" cpwderror={cpwderror} />
                  <span>{cpwderror}</span><br></br> */}
                 <InputComponent inputType="password" inputId="password" inputValue={pwd} inputOnChange={validatePassword} inputLable="Password" pwdError={pwdError} />
-                 <span>{pwdError}</span><br></br>
-                 <button>SignUp</button>
+                 <span  id="sp">{pwdError}</span><br></br>
+                 <button id="signup">SignUp</button>
             </form>
         </div>
     )
