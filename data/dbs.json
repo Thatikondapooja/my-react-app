@@ -1,0 +1,26 @@
+{
+    "blogs": [
+        {
+            "title":"happy new year",
+            "body":"hello",
+            "author":"pooja",
+            "id":1
+        },
+        {
+            "title":"poor dad and rich dad",
+            "body":"poor and rich",
+            "author":"teja",
+            "id":2
+        },
+        {
+            "title":"Mom's story",
+            "body":"mom's magic",
+            "author":"rishi",
+            "id":3
+        }
+            
+        
+    
+]
+}
+    

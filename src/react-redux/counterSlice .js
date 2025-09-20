@@ -6,9 +6,9 @@ const counterSlice =createSlice({
     increment:(state)=>{state.value=state.value+1;},
     decrement:(state)=>{state.value-=1;},
     multiple:(state)=>{state.value*=2;},
-    dividing:(state)=>{state.value/=2},
-    incrementBy:(state,action)=>{state.value+=action.payload},
-    decrementBy:(state,action)=>{state.value-=action.payload}
+    dividing:(state)=>{state.value/=2;},
+    incrementBy:(state,action)=>{state.value+=action.payload;},
+    decrementBy:(state,action)=>{state.value-=action.payload;}
  
  },
 });

@@ -6,24 +6,20 @@ const initialState = {
 };
 
 const fetchSlice = createSlice({
-  name: 'user',
-  initialState ,
+  name: 'fetch',
+  initialState,
   reducers: {
     addUser: (state, action) => {
       state.users.push(action.payload);
-      console.log("addToRedux", state.users);
     },
     addUsers: (state, action) => {
       state.users.push(...action.payload);
-      console.log("addUsersdata", state.users);
     },
     removeUser: (state) => {
       state.users.pop();
-      console.log("User removed", state.users);
     },
     fetchQuotations: (state, action) => {
-      state.quotes = action.payload;
-      console.log("quotes From Redux", state.quotes);
+      state.quotes.push(...action.payload);
     },
   },
 });

@@ -1,9 +1,8 @@
-// src/store.js
-import { configureStore } from '@reduxjs/toolkit';
-import userReduser from './fetchSlice';
-// import addUser from './fetchSlice';
+import { configureStore } from '@reduxjs/toolkit'; // ✅ Correct import
+import fetchReducer from './fetchSlice';
+
 export const store = configureStore({
   reducer: {
-    user: userReduser, 
+    fetch: fetchReducer,
   },
 });
