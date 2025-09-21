@@ -1,3 +1,5 @@
+
+import { Link } from "react-router-dom"
 export  default function Navbar(){
 
 
@@ -5,12 +7,12 @@ export  default function Navbar(){
         <nav className="navbar">
             <h1>The Dojo Blog</h1>
             <div className="links">
-                <a href="/">Home</a>
-                <a href="/creat" style={{
+                <Link  to="/">Home</Link>
+                <Link to="/create" style={{
                     color:"white",
                     backgroundColor:"#f1356d",
                     borderRadius:'8px'
-                    }}>New Blog</a>
+                    }}>New Blog</Link>
             </div>
         </nav>
     )

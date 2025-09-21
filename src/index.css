@@ -24,16 +24,54 @@
   text-decoration: none;
   padding:6px;
 
+
 }
 .navbar a:hover{
   color:blueviolet;
+  box-shadow: 1px 3px 2px rgba(0,0,0,0.1);
 
 }
 .content{
   max-width:600px;
   margin:40px auto;
   padding: 20px;
+      box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+
 }
 .blog{
-  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 1px solid #f2f2f2;
+  color:cadetblue;
+  font-size: 20px;
+}
+.blog a{
+    text-decoration: none;
+
+}
+#addBlog{
+  margin-left: 250px;
+}
+h2,input,label,textarea,select{
+    margin-left: 200px;
+}
+select:hover{
+  border-color: rgb(20, 21, 21);
+  border-radius: 5px;
+
+
+}
+input:hover{
+  border-color: rgb(20, 21, 21);
+  border-radius: 5px;
+
+}
+textarea:hover{
+   border-color: rgb(11, 14, 14);
+  border-radius: 5px;
+}
+option{
+  background-color: rgb(215, 126, 126);
+}
+option:hover{
+  color: rgb(203, 187, 6);
+
 }

@@ -1,26 +1,106 @@
 {
-    "blogs": [
-        {
-            "title":"happy new year",
-            "body":"hello",
-            "author":"pooja",
-            "id":1
-        },
-        {
-            "title":"poor dad and rich dad",
-            "body":"poor and rich",
-            "author":"teja",
-            "id":2
-        },
-        {
-            "title":"Mom's story",
-            "body":"mom's magic",
-            "author":"rishi",
-            "id":3
-        }
-            
-        
-    
-]
+  "blogs": [
+    {
+      "title": "happy new year",
+      "body": "hello",
+      "author": "pooja",
+      "id": "1"
+    },
+    {
+      "title": "poor dad and rich dad",
+      "body": "poor and rich",
+      "author": "teja",
+      "id": "2"
+    },
+    {
+      "title": "Mom's story",
+      "body": "mom's magic",
+      "author": "rishi",
+      "id": "3"
+    },
+    {
+      "id": "f513",
+      "title": "",
+      "text": "",
+      "author": "teja"
+    },
+    {
+      "id": "b3b4",
+      "title": "",
+      "text": "",
+      "author": "teja"
+    },
+    {
+      "id": "04a4",
+      "title": "",
+      "text": "",
+      "author": "teja"
+    },
+    {
+      "id": "824e",
+      "title": "",
+      "text": "",
+      "author": "teja"
+    },
+    {
+      "id": "4057",
+      "title": "",
+      "text": "",
+      "author": "teja"
+    },
+    {
+      "id": "e614",
+      "title": "",
+      "text": "",
+      "author": "teja"
+    },
+    {
+      "id": "6223",
+      "title": "",
+      "text": "",
+      "author": "teja"
+    },
+    {
+      "id": "50bd",
+      "title": "",
+      "text": "",
+      "author": "teja"
+    },
+    {
+      "id": "3dcb",
+      "title": "",
+      "text": "",
+      "author": "teja"
+    },
+    {
+      "id": "f81b",
+      "title": "bhjn",
+      "text": " jm",
+      "author": "pooja"
+    },
+    {
+      "id": "c31b",
+      "title": "bhjn",
+      "text": " jm",
+      "author": "pooja"
+    },
+    {
+      "id": "c6ca",
+      "title": "bhjn",
+      "text": " jm",
+      "author": "pooja"
+    },
+    {
+      "id": "f6ba",
+      "title": "poojas dairy",
+      "text": "it about miss thatikonda",
+      "author": "rishi"
+    },
+    {
+      "id": "6a5a",
+      "title": "",
+      "text": "",
+      "author": "teja"
+    }
+  ]
 }
-    
